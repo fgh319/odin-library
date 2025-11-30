@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+
+<body>
+    <!-- 显示书籍的容器 -->
+    <div id="book-container"></div>
+
+    <!-- 添加新书的按钮 -->
+    <button id="add-book-btn">添加书籍</button>
+
+    <!-- 模态框 -->
+    <dialog id="book-form-dialog">
+        <form id="add-book-form" method="dialog">
+            <h2>添加书籍</h2>
+
+            <div class="form-group">
+                <label for="title">书名:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+
+            <div class="form-group">
+                <label for="author">作者:</label>
+                <input type="text" id="author" name="author" required>
+            </div>
+
+            <div class="form-group">
+                <input type="checkbox" id="read" name="read">
+                <label for="read">已阅读</label>
+            </div>
+
+            <div class="form-buttons">
+                <button type="submit">添加</button>
+                <button type="button" id="cancel-dialog-btn">取消</button>
+            </div>
+        </form>
+    </dialog>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
